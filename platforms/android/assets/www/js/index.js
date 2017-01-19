@@ -47,17 +47,11 @@ var page_content = new Object();
     page_content.conteiner = document.getElementById('cont_cont');
     
     page_content.load_content = function(url){
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', url, true);
-        xhr.onreadystatechange=function(){
-            if (xhr.readyState == 4) {
-                if (xhr.status == 200) {
-                    var res = xhr.responseText;
-                    page_content.conteiner.innerHTML = res;
-                }
-            }
-        }
-        xhr.send(null);
+        var res = ajax.getText(url, page_content.update_content);
+    }
+
+    page_content.update_content = function(res){
+        page_content.conteiner.innerHTML = res;
     }
 
     page_content.clear_cont = function(){

@@ -12,7 +12,7 @@
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
-	<icon src="img/logo.png"/>
+	<icon src="www/img/logo.png"/>
     <platform name="android">
         <allow-intent href="market:*" />
 		<preference name="FullScreen" value="false"/>

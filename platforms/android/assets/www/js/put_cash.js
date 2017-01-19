@@ -10,5 +10,17 @@ var eye = new Object();
 	eye.wait = function(){
 		eye.elem.style.backgroundcolor = "gray";
 	}
+	eye.action = function(){
+		var url = '';
+		url = '';
+	}
 
+var select = new Object();
 	
+	select.load = function(){
+
+	}
+
+	select.reset = function(){
+
+	}

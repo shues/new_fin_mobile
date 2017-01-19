@@ -24,4 +24,3 @@ var select = new Object();
 	select.reset = function(){
 
 	}
-
